@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.millionaire {
+    gap: 40px;
+    background: rgb(0,2,64);
+    background: linear-gradient(90deg, rgba(0,2,64,1) 0%, rgba(117,13,171,1) 50%, rgba(0,2,64,1) 100%);
+    height: 100vh;
+    max-width: 100%;
+    padding: 60px 20px 0;
+    position: relative;
+    color: rgb(248, 202, 63);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto 40px;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    max-width: 14%;
+    width: 100%;
+    gap: 6px;
+}
+
+.win {
+    width: 100%;
+    padding: 2px 15px;
+    list-style: none;
+    border-radius: 30px;
+}
+
+.win-line {
+    color: #fff;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 100%;
+    width: 16%;
+    gap: 20px;
+}
+
+.help-item {
+    width: 70%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #135f7d;
+    background: rgb(117,13,171);
+    background: linear-gradient(0deg, rgba(117,13,171,1) 0%, rgba(0,2,64,1) 100%);
+    color: rgb(248, 202, 63);
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.help-item:hover {
+    background: rgb(0,3,101);
+    background: linear-gradient(0deg, rgba(0,3,101,1) 0%, rgba(140,17,204,1) 100%);
+}
+
+.question_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(117,13,171);
+    background: linear-gradient(0deg, rgba(117,13,171,1) 0%, rgba(0,2,64,1) 100%);
+    border: 2px solid #135f7d;
+    border-radius: 50px;
+    height: 100%;
+    min-height: 80px;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 12px 30px 12px 30px;
+    font-size: 22px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.answer-radio {
+    display: none;
+}
+
+.answer-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(117,13,171);
+    background: linear-gradient(0deg, rgba(117,13,171,1) 0%, rgba(0,2,64,1) 100%);
+    outline: 1px solid rgb(8, 129, 177);
+    border: 1px solid rgb(8, 129, 177);
+    border-radius: 50px;
+    height: 60px;
+    padding: 10px;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: outline 0.15s linear, border-width 0.15s linear;
+}
+
+.answer-label:hover {
+    outline: 2.5px solid rgb(59, 188, 239);
+    border: 2.5px solid rgb(59, 188, 239);
+}
+.answer-text {
+    font-size: 26px;
+    color: rgb(248, 202, 63);
+}
+
+.answer-radio {
+    display: none;
+}
+
+.correct-answer {
+    background: rgb(4, 188, 22);
+    animation: animaGreen 1.5s infinite; 
+}
+
+.incorrect-answer {
+    background: rgb(207, 32, 32);
+}
+
+.selected-reward {
+    background-color: rgb(248, 202, 63);
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    height: 50px;
+}
+
+.modal {
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    z-index: 1;
+    background: rgb(0,3,101);
+    background: linear-gradient(0deg, rgba(0,3,101,1) 0%, rgba(140,17,204,1) 100%);
+    color: white;
+    text-align: center;
+    border: 1px solid #135f7d;
+    border-radius: 20px;
+    font-size: 130%;
+}
+
+.reward-modal {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.winner {
+    display: inline-block;
+    padding: 10px 10px 0 10px;
+}
+
+.call-answer-modal{
+    width: 1000px;
+}
+
+.new-game {
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(248, 202, 63, 0.88);
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+.new-game:hover {
+    background-color: rgb(248, 202, 63);
+}
+
+.game-reward {
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.block-answer {
+    background: rgb(44, 44, 44);
+    color: black; 
+    cursor: default;
+    border: none;
+    outline: none;
+}
+
+.block-answer:hover{
+    background:  rgb(44, 44, 44);  
+    cursor: default;
+    border: none;
+    outline: none;
+}
+
+@keyframes animaGreen {
+    50% {background-color: rgb(3, 143, 17)}
+}

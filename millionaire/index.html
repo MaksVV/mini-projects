@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Millionaire</title>
+</head>
+<body>
+    <div class="millionaire">
+        <div class="main">
+            <div class="help">
+                <button class="help-item fifty-fifty" onclick="helpFifty()">50:50</button>
+                <button class="help-item hall-help" onclick="helpCall()">Дзвінок</button>
+            </div>
+            <div class="logo">
+                <img src="/millionaire/img/logo.png" alt="logo">
+            </div>
+            <ul class="list">
+                <li class="win win-line">
+                    <span>₴ 1 000 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 500 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 250 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 125 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 64 000</span>
+                </li>
+                <li class="win win-line">
+                    <span>₴ 32 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 16 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 8 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 4 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 2 000</span>
+                </li>
+                <li class="win win-line">
+                    <span>₴ 1 000</span>
+                </li>
+                <li class="win">
+                    <span>₴ 500</span>
+                </li>
+                <li class="win">
+                    <span>₴ 300</span>
+                </li>
+                <li class="win">
+                    <span>₴ 200</span>
+                </li>
+                <li class="win">
+                    <span>₴ 100</span>
+                </li>
+            </ul>
+        </div>
+        <div class="question_container">
+            <div class="question"></div>
+            <div class="buttons">
+                <label class="answer-label" onclick="">
+                    <span class="answer-text"></span>
+                    <input class="answer-radio" type="radio" name="answer" value="a">
+                </label>
+
+                <label class="answer-label">
+                    <span class="answer-text"></span>
+                    <input class="answer-radio" type="radio" name="answer" value="b">
+                </label>
+
+                <label class="answer-label">
+                    <span class="answer-text"></span>
+                    <input class="answer-radio" type="radio" name="answer" value="c">
+                </label>
+
+                <label class="answer-label">
+                    <span class="answer-text"></span>
+                    <input class="answer-radio" type="radio" name="answer" value="d">
+                </label>
+            </div>
+        </div>
+        <div class="modal call-answer-modal"></div>
+        <div class="modal reward-modal">
+            <span class="game-reward"></span>
+            <button class="new-game" onclick="newGame()">Спробувати ще!</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

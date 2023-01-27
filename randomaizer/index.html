@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Randomaizer</title>
+</head>
+<body>
+    <div class="random">
+        <h1 class="title">Генератор випадкових чисел</h1>
+        <div class="input-container">
+            <label>
+                <p>Мінімальне число</p>
+                <input class="input min" type="number" name="min" value="1">
+            </label>
+            <label>
+                <p>Максимальне число</p>
+                <input class="input max" type="number" name="max" value="100">
+            </label>
+            <label>
+                <p>Кількість випадкових чисел</p>
+                <input class="input amount" type="number" name="amount" value="1">
+            </label>
+            <label class="unique">
+                <input class="unique-numbers" type="checkbox">
+                Тільки унікальні числа
+            </label>
+            <button class="generate" onclick="generateNumber()">Згенерувати</button>
+        </div>
+        <div class="result"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
